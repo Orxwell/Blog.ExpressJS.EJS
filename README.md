@@ -10,6 +10,7 @@ Una aplicación de blog simple desarrollada con Node.js, ExpressJS y EJS como mo
 
 ## 📁 Estructura del proyecto
 
+```plaintext
 Blog.ExpressJS.EJS/
 ├── node_modules/
 ├── server/
@@ -74,6 +75,7 @@ Blog.ExpressJS.EJS/
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
 ## 🚀 Cómo ejecutar el proyecto
 
