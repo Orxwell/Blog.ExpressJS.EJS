@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="<%= server_url %>/api/icon/logo/favicon.ico<%= `?v=${Date.now()}` %>"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="<%= server_url %>/api/css/public/blog.public.css<%= `?v=${Date.now()}` %>"
+    />
+
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <img src="<%= server_url %>/api/img/content/profile_pic.png<%= `?v=${Date.now()}` %>" alt="profile_pic">
+  
+    <h1>Sebastián Aarón Garnier Alarcón</h1>
+
+    <h2>Aspirante a Ingeniero Informático y Desarrollador Web Full-Stack</h2>
+
+    <p>Bienvenido a mi blog, en la parte de abajo tendrás links a imágenes dónde podrás moverte de manera libre.</p>
+
+    <nav>
+      <a href="/hobbies">Mis hobbies</a>
+      <a href="/videogames">Videojuegos favoritos</a>
+    </nav>
+
+    <span>¡Mis redes sociales!</span>
+
+    <nav>
+      <a href="https://www.instagram.com/orxwell.dev">Mi Instagram</a>
+      <a href="https://www.linkedin.com/in/sebastian-aaron-garnier-alarcon/">Mi LinkedIn</a>
+      <a href="https://www.github.com/Orxwell">Mi GitHub</a>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  background: linear-gradient(90deg,
+    rgba(58, 51, 51, 1) 0%,
+    rgba(65, 62, 119, 1) 50%,
+    rgba(123, 106, 106, 1) 100%
+  );
+  font-family: 'Trebuchet MS';
+  align-items: center;
+  color: white;
+}
+
+img {
+  margin: 60px 0px 0px 0px;
+  border-radius: 15px;
+  width: max-content;
+  border: solid 10px black;
+  animation: circularColor 3.5s infinite;
+}
+
+p {
+  width: 70vw;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  padding: 30px 0px 0px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  justify-self: center;
+  color: white;
+  background-color: #111;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  margin: 8px;
+}
+
+nav a:hover {
+  filter: invert(1);
+}
+
+hr {
+  width: 90%;
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes animatedGlow {
+  0%, 100% { box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, .4); }
+  25%, 75% { box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .5); }
+  50%      { box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .6); }
+}
+
+@keyframes circularColor {
+  0%, 100% { border: solid 10px rgba(58, 51, 51, 1); }
+  25%, 75% { border: solid 10px rgba(65, 62, 119, 1); }
+  50%      { border: solid 10px rgba(123, 106, 106, 1); }
+}

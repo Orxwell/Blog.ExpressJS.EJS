@@ -1,0 +1,27 @@
+{
+  "name": "blog.expressjs.ejs",
+  "version": "1.0.0",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Succesfully test...\" && exit 0",
+    "start": "node ./server/src/server.mjs",
+    "dev": "node --env-file .env ./server/src/server.mjs"
+  },
+  "keywords": [],
+  "author": "OrxwellDev",
+  "license": "ISC",
+  "type": "module",
+  "imports": {
+    "#controllers/*": "./server/src/controllers/*",
+    "#importers/*": "./server/src/importers/*",
+    "#middlewares/*": "./server/src/middlewares/*",
+    "#routes/*": "./server/src/routes/*",
+    "#services/*": "./server/src/services/*",
+    "#utils/*": "./server/src/utils/*"
+  },
+  "description": "This is a project made by one developer, for educational purposes.",
+  "dependencies": {
+    "ejs": "3.1.10",
+    "express": "5.1.0"
+  }
+}
