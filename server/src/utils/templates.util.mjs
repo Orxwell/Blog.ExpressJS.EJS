@@ -11,9 +11,7 @@ const temp = {
   //private_loginEJS: join(global.privatePath, '/login.private.ejs'),
 
   // Public templates - No authentication
-  public_blogEJS      : join(global.publicPath, '/blog.public.ejs'      ),
-  public_hobbiesEJS   : join(global.publicPath, '/hobbies.public.ejs'   ),
-  public_videogamesEJS: join(global.publicPath, '/videogames.public.ejs'),
+  public_homeEJS: join(global.publicPath, '/home.public.ejs'),
 };
 
 //export const errorAtGetEJS  = temp.error_at_getEJS ;
@@ -21,6 +19,4 @@ const temp = {
 
 //export const privateLoginEJS = temp.private_loginEJS;
 
-export const publicBlogEJS       = temp.public_blogEJS      ;
-export const publicHobbiesEJS    = temp.public_hobbiesEJS   ;
-export const publicVideogamesEJS = temp.public_videogamesEJS;
+export const publicHomeEJS = temp.public_homeEJS;

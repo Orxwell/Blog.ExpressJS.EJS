@@ -8,9 +8,7 @@ import {
 
   //privateLoginEJS,
 
-  publicBlogEJS      ,
-  publicHobbiesEJS   ,
-  publicVideogamesEJS,
+  publicHomeEJS,
 } from '#utils/templates.util.mjs';
 
 // External & Internal Libraries
@@ -25,34 +23,8 @@ routerGET.get('/',
   async (req, res) => {
     // Try-Catch for the rendering and others
     try {
-      return res.render(publicBlogEJS, {
-        title: 'Blog - SAGA',
-
-        server_url: SERVER_URL,
-      });
-    } catch (_) { return res.sendStatus(503); }
-  }
-);
-
-routerGET.get('/hobbies',
-  async (req, res) => {
-    // Try-Catch for the rendering and others
-    try {
-      return res.render(publicHobbiesEJS, {
-        title: 'Blog - Hobbies',
-
-        server_url: SERVER_URL,
-      });
-    } catch (_) { return res.sendStatus(503); }
-  }
-);
-
-routerGET.get('/videogames',
-  async (req, res) => {
-    // Try-Catch for the rendering and others
-    try {
-      return res.render(publicVideogamesEJS, {
-        title: 'Blog - Videogames',
+      return res.render(publicHomeEJS, {
+        title: 'Laboratory - SAGA',
 
         server_url: SERVER_URL,
       });
@@ -64,7 +36,7 @@ routerGET.get('/videogames',
 
 // >>-------- GET - Private Routes - BELOW --------<<
 /*
-routerGET.get('/login-blog-staff',
+routerGET.get('/login-staff',
   handler.queryParams({
     mapOfKeyValues: {
       username: 'string',
@@ -91,7 +63,7 @@ routerGET.get('/login-blog-staff',
 
     try {
       return res.render(privateLoginEJS, {
-        title: "Blog - Staffs",
+        title: "Lab - Staffs",
 
         data: {
           username: username,
@@ -117,7 +89,7 @@ routerGET.get('/error-at-post',
   async (req, res) => {
     try {
       return res.render(errorAtPostEJS, {
-        title: 'Blog - STATUS-INFO',
+        title: 'Lab - STATUS-INFO',
 
         route: req.path,
 
@@ -131,7 +103,7 @@ routerGET.get('/*',
   async (req, res) => {
     try {
       return res.render(errorAtGetEJS, {
-        title: 'Blog - STATUS-INFO',
+        title: 'Lab - STATUS-INFO',
 
         route: req.path,
 

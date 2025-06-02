@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="<%= server_url %>/api/icon/logo/favicon.ico<%= `?v=${Date.now()}` %>"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="<%= server_url %>/api/css/public/home.public.css<%= `?v=${Date.now()}` %>"
+    />
+
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <main>
+      <section id="forJavascript">
+        <ul>
+          <li>
+            <h2><strong>Ejercicio 1:</strong> Detectar si la cadena de entrada es un palíndromo.</h2>
+            <div class="terminal">
+              <p><span class="blue">function</span> <span class="green">isPalindrome</span> (<span class="green">evaluate</span>) {</p>
+              <p><span class="tab">__</span><span class="blue">const</span> <span class="green">len</span> <span class="tab">______</span> <span class="blue">=</span> <span class="green">evaluate</span>.<span class="seablue">length</span> <span class="tab">_</span>;</p>
+              <p><span class="tab">__</span><span class="blue">const</span> <span class="green">middle_len</span> <span class="blue">=</span> <span class="green">parseInt</span>(<span class="green">len</span> <span class="blue">/</span> <span class="orange">2</span>);</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="tab">__</span><span class="blue">for</span> (<span class="blue">let</span> <span class="green">i</span><span class="blue">=</span><span class="orange">0</span>; <span class="green">i</span><span class="blue"><</span><span class="green">middle_len</span>; <span class="green">i</span><span class="blue">++</span>) {</p>
+              <p><span class="tab">____</span><span class="blue">if</span> (<span class="green">evaluate</span>.<span class="seablue">at</span>(<span class="green">i</span>) <span class="blue">!==</span> <span class="green">evaluate</span>.<span class="seablue">at</span>(<span class="green">len</span><span class="blue">-</span>(<span class="green">i</span><span class="blue">+</span><span class="orange">1</span>))) {</p>
+              <p><span class="tab">______</span><span class="blue">return false</span>;</p>
+              <p><span class="tab">____</span>}</p>
+              <p><span class="tab">__</span>}</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="tab">__</span><span class="blue">return true</span>;</p>
+              <p>}</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="green">console</span>.<span class="seablue">log</span>(<span class="green">isPalindrome</span>(<span class="orange">'abcba'</span>)); <span class="comment">// ejemplo válido</span></p>
+              <p><span class="green">console</span>.<span class="seablue">log</span>(<span class="green">isPalindrome</span>(<span class="orange">'efghi'</span>)); <span class="comment">// ejemplo inválido</span></p>
+            </div>
+          </li>
+
+          <li>
+            <h2><strong>Ejercicio 2:</strong> Escribir un programa que pida dos números y escriba en la pantalla cuál es el mayor, o si son iguales.</h2>
+            <div class="terminal">
+              <p><span class="blue">const</span> <span class="green">num1</span> <span class="blue">=</span> <span class="green">parseFloat</span>(<span class="green">prompt</span>(<span class="orange">'Introduce el primer número: '</span>)) ;</p>
+              <p><span class="blue">const</span> <span class="green">num2</span> <span class="blue">=</span> <span class="green">parseFloat</span>(<span class="green">prompt</span>(<span class="orange">'Introduce el segundo número: '</span>));</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="blue">if</span> <span class="tab">____</span> (<span class="green">num1</span> <span class="blue">></span> <span class="green">num2</span>) { <span class="green">console</span>.<span class="seablue">log</span>(<span class="orange">`El número mayor es: ${</span><span class="green">num1</span><span class="orange">}`</span>); }</p>
+              <p><span class="blue">else if</span> (<span class="green">num2</span> <span class="blue"><</span> <span class="green">num1</span>) { <span class="green">console</span>.<span class="seablue">log</span>(<span class="orange">`El número mayor es: ${</span><span class="green">num2</span><span class="orange">}`</span>); }</p>
+              <p><span class="blue">else</span> { <span class="green">console</span>.<span class="seablue">log</span>(<span class="orange">'Ambos números son iguales.'</span>); }</p>
+            </div>
+          </li>
+          
+          <li>
+            <h2><strong>Ejercicio 3:</strong> Escribir un programa que pida una frase y encuentre sus vocales.</h2>
+            <div class="terminal">
+              <p><span class="blue">const</span> <span class="green">phrase</span> <span class="blue">=</span> <span class="green">prompt</span>(<span class="orange">'Introduce una frase: '</span>);</p>
+              <p><span class="blue">const</span> <span class="green">vocals</span> <span class="blue">=</span> <span class="green">frase</span>.<span class="seablue">match</span>(<span class="orange">/[aeiou]/gi</span>) <span class="tab">_____</span> ;</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="blue">if</span> (<span class="green">vocals</span>) { <span class="green">console</span>.<span class="seablue">log</span>(<span class="orange">`Vocales neutras encontradas: ${</span><span class="green">vocals</span>.<span class="seablue">join</span>(<span class="orange">', '</span>)<span class="orange">}`</span>); }</p>
+              <p><span class="blue">else</span> { <span class="green">console</span>.<span class="seablue">log</span>(<span class="orange">'No se encontraron vocales.'</span>); }</p>
+            </div>
+          </li>
+          
+          <li>
+            <h2><strong>Ejercicio 4:</strong> Escribir un programa que pida una frase y encuentre el número de vocales que posee la frase.</h2>
+            <div class="terminal">
+              <p><span class="blue">const</span> <span class="green">phrase</span><span class="tab">_</span> <span class="blue">=</span> <span class="green">prompt</span>(<span class="orange">'Introduce una frase: '</span>) ;</p>
+              <p><span class="blue">const</span> <span class="green">counter</span> <span class="blue">=</span> { <span class="green">a</span>: <span class="orange">0</span>, <span class="green">e</span>: <span class="orange">0</span>, <span class="green">i</span>: <span class="orange">0</span>, <span class="green">o</span>: <span class="orange">0</span>, <span class="green">u</span>: <span class="orange">0</span> };</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="blue">for</span> (<span class="blue">const</span> <span class="green">letter</span> <span class="blue">of</span> <span class="green">phrase</span>.<span class="seablue">toLowerCase</span>() ) {</p>
+              <p><span class="tab">__</span><span class="blue">if</span> (<span class="green">counter</span>.<span class="seablue">hasOwnProperty</span>(<span class="green">letter</span>)) {</p>
+              <p><span class="tab">____</span><span class="green">counter</span>[<span class="green">letter</span>]<span class="blue">++</span>;</p>
+              <p><span class="tab">__</span>}</p>
+              <p>}</p>
+              <p><span class="tab">_</span></p>
+              <p><span class="green">console</span>.<span class="seablue">log</span>(<span class="orange">`Conteo de vocales: ${</span><span class="green">counter</span><span class="orange">}`</span>);</p>
+            </div>
+          </li>          
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="forAJAX">
+        <ul>
+          <li>
+            <h3>Parte 1 - URL de la Petición</h3>
+            <input type="text" id="partOne" />
+            <button id="fetchBttn">Mostrar Contenidos</button>
+          </li>
+
+          <li>
+            <h3>Parte 2 - Cuerpo de la Peticióna</h3>
+            <pre id="contentArea"></pre>
+          </li>
+
+          <li>
+            <h3>Parte 3 - Estados de la Petición</h3>
+            <pre id="stateArea"></pre>
+          </li>
+
+          <li>
+            <h3>Parte 4 - Cabeceras HTTP de la Petición</h3>
+            <pre id="headersArea"></pre>
+          </li>
+
+          <li>
+            <h3>Parte 5 - Código de Estatus de la Petición</h3>
+            <pre id="statusCode"></pre>
+          </li>
+        </ul>
+
+        <script type="text/javascript" src="<%= server_url %>/api/js/ajax/script.ajax.js<%= `?v=${Date.now()}` %>"></script>      
+      </section>
+    </main>
+  </body>
+</html>

@@ -17,7 +17,7 @@ routerPOST.post('/ping',
 
 // >>-------- POST - Private Routes - ABOVE --------<<
 /*
-routerPOST.post('/login-blog-staff',
+routerPOST.post('/login-staff',
   handler.bodyParams({
     mapOfKeyValues: {
       username: 'string',

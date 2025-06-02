@@ -30,9 +30,6 @@ const img_path   = join(static_path, '/img'  );
 const js_path    = join(static_path, '/js'   );
 const pdf_path   = join(static_path, '/pdf'  );
 
-// IMG level path
-const content_path = join(img_path, '/content');
-
 
 export default global = {
   srcPath   : src_path   ,
@@ -55,6 +52,4 @@ export default global = {
   imgPath  : img_path  ,
   jsPath   : js_path   ,
   pdfPath  : pdf_path  ,
-  
-  contentPath: content_path,
 };
